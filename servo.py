@@ -34,6 +34,21 @@ p.ChangeDutyCycle(9)
 time.sleep(1)  
 p.ChangeDutyCycle(10)  
 
+time.sleep(1)  
+p.ChangeDutyCycle(11)  
+
+time.sleep(1)  
+p.ChangeDutyCycle(12)  
+
+time.sleep(1)  
+p.ChangeDutyCycle(13)  
+
+time.sleep(1)  
+p.ChangeDutyCycle(14)  
+
+time.sleep(1)  
+p.ChangeDutyCycle(15)  
+
 time.sleep(2)  
 print("Stopping the script")
 p.stop()                # stop the PWM output  
