@@ -11,7 +11,7 @@ GPIO.setmode(GPIO.BCM)  # choose BCM or BOARD numbering schemes. I use BCM
   
 GPIO.setup(4, GPIO.OUT)# set GPIO 25 as an output. You can use any GPIO port  
   
-p = GPIO.PWM(25, 50)    # create an object p for PWM on port 25 at 50 Hertz  
+p = GPIO.PWM(4, 50)    # create an object p for PWM on port 25 at 50 Hertz  
                         # you can have more than one of these, but they need  
                         # different names for each port   
                         # e.g. p1, p2, motor, servo1 etc.  
