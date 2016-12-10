@@ -62,10 +62,7 @@ time.sleep(1)
 p.ChangeDutyCycle(3)  
 
 time.sleep(1)  
-p.ChangeDutyCycle(2)  
-
-time.sleep(1)  
-p.ChangeDutyCycle(1)  
+p.ChangeDutyCycle(2)   
 
 time.sleep(2)  
 print("Stopping the script")
