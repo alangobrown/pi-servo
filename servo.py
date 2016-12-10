@@ -16,18 +16,20 @@ p = GPIO.PWM(4, 50)    # create an object p for PWM on port 25 at 50 Hertz
                         # different names for each port   
                         # e.g. p1, p2, motor, servo1 etc.  
 print("Starting PWM")  
-p.start(50)             # start the PWM on 50 percent duty cycle  
+p.start(5)             # start the PWM on 50 percent duty cycle  
                         # duty cycle value can be 0.0 to 100.0%, floats are OK  
 
 time.sleep(2)  
-print("Setting Duty Cycle to 90%")
-p.ChangeDutyCycle(90)   # change the duty cycle to 90%  
+print("Setting Duty Cycle to 7.5")
+p.ChangeDutyCycle(7.5)  
 
 time.sleep(2)  
-print("Setting Frequency to 100")
-p.ChangeFrequency(100)  # change the frequency to 100 Hz (floats also work)  
-                        # e.g. 100.5, 5.2  
+print("Setting Duty Cycle to 10")
+p.ChangeDutyCycle(10)  
+
+
 time.sleep(2)  
+print("Stopping the script")
 p.stop()                # stop the PWM output  
   
 GPIO.cleanup()          # when your program exits, tidy up after yourself 
